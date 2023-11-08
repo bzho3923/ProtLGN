@@ -65,7 +65,7 @@ see `run_pretrain.sh`
 
 ### Zero-shot prediction for mutant sequences
 
-You can use our checkpoint for zero-shot inference.
+You can use your own checkpoint for zero-shot inference.
 
 #### Step 1: Prepare mutant dataset
 
