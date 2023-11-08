@@ -68,23 +68,18 @@ You can use our checkpoint for zero-shot inference.
 
 #### Step 1: Prepare mutant dataset
 
-data
+Data map: 
 
+```
 |—— eval_dataset
-
 |——|—— DATASET
-
 |——|——|—— Protein1
-
 |——|——|——|—— Protein1.tsv (DMS file)
-
 |——|——|——|—— Protein1.pdb (pdb file)
-
 |——|——|——|—— Protein1.fasta (sequence)
-
 |——|——|—— Protein2
-
 |——|——|——|...
+```
 
 see `script/build_mutant_dataset.sh`
 
