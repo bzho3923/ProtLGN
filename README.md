@@ -91,9 +91,9 @@ see `script/mutant_predict.sh`
 <!-- CONTRIBUTING -->
 ## Contributing
 
-Please cite our papaer:
+Please cite our paper:
 ```
-@article {Zhou2023ProLGN,
+@article {Zhou2023ProtLGN,
 	author = {Bingxin Zhou and Lirong Zheng and Banghao Wu and Yang Tan and Outongyi Lv and Kai Yi and Guisheng Fan and Liang Hong},
 	title = {Protein Engineering with Lightweight Graph Denoising Neural Networks},
 	elocation-id = {2023.11.05.565665},
