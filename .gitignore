@@ -130,7 +130,6 @@ dmypy.json
 
 .idea/
 data/
-result/
 *.ipynb
 *.gz
 *.html

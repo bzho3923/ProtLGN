@@ -1,6 +1,5 @@
 <!-- Improved compatibility of back to top link: See: https://github.com/bzho3923/ProtLGN/pull/73 -->
 <a name="readme-top"></a>
-
 <!-- PROJECT LOGO -->
 <div align="left">
   <h1 align="left">ProtLGN</h1>
@@ -19,11 +18,14 @@
   </p>
 </div>
 
-
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-We design ProtLGN..
+ProtLGN is pre-trained on wild-type proteins for AA-type denoising tasks with equivariant graph neural networks to derive the joint distribution of the recovered AA types (red). 
+
+For a protein to mutate, the predicted probabilities suggest the fitness score for associated mutations (blue). 
+
+With additional mutation evaluations from wet biochemical assessments, the pre-trained model can be updated to better fit the specific protein and protein functionality (green).
 
 <a href="https://github.com/bzho3923/ProtLGN">
     <img src="img/logo.png" alt="Logo">
@@ -65,7 +67,6 @@ see `run_pretrain.sh`
 
 You can use our checkpoint for zero-shot inference.
 
-
 #### Step 1: Prepare mutant dataset
 
 Data map: 
@@ -106,8 +107,6 @@ Please cite our papaer:
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 
 <!-- LICENSE -->
 ## License
