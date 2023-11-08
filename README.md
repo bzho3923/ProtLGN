@@ -26,7 +26,7 @@
 We design ProtLGN..
 
 <a href="https://github.com/bzho3923/ProtLGN">
-    <img src="img/logo.png" alt="Logo" width="80" height="80">
+    <img src="img/logo.png" alt="Logo">
   </a>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
