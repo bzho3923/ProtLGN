@@ -70,7 +70,7 @@ see `requirements.txt` for more detail.
 
 ### Pre-train ProtLGN
 
-### Step 1: get raw dataset
+#### Step 1: get raw dataset
 
 We use the dataset frmo `CATH 4.2`, you can download from https://www.cathdb.info/.
 
@@ -80,11 +80,11 @@ wget
 mkdir -p data/cath_k10/raw
 ```
 
-### Step 2: build graph dataset
+#### Step 2: build graph dataset
 
 see `script/build_cath_dataset.sh`
 
-### Step 3: run pre-train
+#### Step 3: run pre-train
 
 see `run_pretrain.sh`
 
@@ -93,21 +93,29 @@ see `run_pretrain.sh`
 You can use our checkpoint for zero-shot inference.
 
 
-### Step 1: Prepare mutant dataset
+#### Step 1: Prepare mutant dataset
 
 data
+
 |—— eval_dataset
+
 |——|—— DATASET
+
 |——|——|—— Protein1
+
 |——|——|——|—— Protein1.tsv (DMS file)
+
 |——|——|——|—— Protein1.pdb (pdb file)
+
 |——|——|——|—— Protein1.fasta (sequence)
+
 |——|——|—— Protein2
+
 |——|——|——|...
 
 see `script/build_mutant_dataset.sh`
 
-### Step 2: Zero-shot
+#### Step 2: Zero-shot
 
 see `script/mutant_predict.sh`
 
