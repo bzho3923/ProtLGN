@@ -47,7 +47,7 @@ see `requirements.txt` for more detail.
 
 #### Step 1: get raw dataset
 
-We use the dataset frmo `CATH 4.2`, you can download from https://www.cathdb.info/.
+We use the dataset from `CATH 4.2`, you can download from https://www.cathdb.info/.
 
 ```sh
 cd <your dir>
