@@ -1,10 +1,9 @@
-GNN_TYPE=egnn
 
-CUDA_VISIBLE_DEVICES=7 python mutant_predict.py \
-    --checkpoint result/weight/Sep26_loty.pt \
+CUDA_VISIBLE_DEVICES=0 python mutant_predict.py \
+    --checkpoint ckpt/ProtLGN.pt \
     --c_alpha_max_neighbors 10 \
-    --gnn $GNN_TYPE \
+    --gnn egnn \
     --use_sasa \
     --layer_num 6 \
-    --gnn_config src/Egnnconfig/$GNN_TYPE.yaml \
-    --mutant_dataset data/proteingym
+    --gnn_config src/Egnnconfig/egnn_mutant.yaml \
+    --mutant_dataset data/example

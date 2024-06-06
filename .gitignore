@@ -129,7 +129,10 @@ dmypy.json
 .pyre/
 
 .idea/
-data/
+
+data/*
+!data/example/
+!data/example/DATASET/
 result/
 *.ipynb
 *.gz

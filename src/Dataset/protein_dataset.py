@@ -252,7 +252,7 @@ class Protein(InMemoryDataset):
         file.close()
 
     def process(self):
-        # self.generate_protein_graph()###generate graph data and save in graph dir
+        self.generate_protein_graph()###generate graph data and save in graph dir
         # self.write_info()
 
         filenames = os.listdir(self.saved_graph_dir)

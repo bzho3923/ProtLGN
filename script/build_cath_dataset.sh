@@ -1,4 +1,4 @@
-export k=20
+export k=10
 
 python data.py \
 --build_cath \

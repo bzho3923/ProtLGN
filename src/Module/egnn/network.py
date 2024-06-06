@@ -108,8 +108,9 @@ class EGNN(nn.Module):
         if self.config["problem_type"] == "multi_label_classification":
             x_mean = scatter_mean(x, batch, dim=0)
             x = self.cls_layer(x_mean)
+            return x, x_mean
         elif self.config["problem_type"] == "aa_classification":
             x = self.droplayer(x)
             x = self.lin(x)
-        return x, x_mean
+        return x
         

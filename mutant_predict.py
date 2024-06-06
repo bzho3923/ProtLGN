@@ -133,11 +133,11 @@ if __name__ == '__main__':
     model.cuda()
     print_param_num(model)
     model_state_dict = torch.load(args.checkpoint)["model_state_dict"]
-    # new_state_dict = {}
-    # for key, value in model_state_dict.items():
-    #     new_key = "GNN_model." + key
-    #     new_state_dict[new_key] = value
-    model.load_state_dict(model_state_dict)
+    new_state_dict = {}
+    for key, value in model_state_dict.items():
+        new_key = "GNN_model." + key
+        new_state_dict[new_key] = value
+    model.load_state_dict(new_state_dict)
     
     os.makedirs(f"result/{args.mutant_dataset.split('/')[-1]}", exist_ok=True)
     # for protein in protein_names:

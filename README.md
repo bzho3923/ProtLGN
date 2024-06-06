@@ -88,21 +88,31 @@ see `script/build_mutant_dataset.sh`
 
 see `script/mutant_predict.sh`
 
+```
+CUDA_VISIBLE_DEVICES=0 python mutant_predict.py \
+    --checkpoint ckpt/ProtLGN.pt \
+    --c_alpha_max_neighbors 10 \
+    --gnn egnn \
+    --use_sasa \
+    --layer_num 6 \
+    --gnn_config src/Egnnconfig/egnn_mutant.yaml \
+    --mutant_dataset data/example
+```
+
 <!-- CONTRIBUTING -->
 ## Contributing
 
 Please cite our paper:
 ```
-@article {Zhou2023ProtLGN,
-	author = {Bingxin Zhou and Lirong Zheng and Banghao Wu and Yang Tan and Outongyi Lv and Kai Yi and Guisheng Fan and Liang Hong},
-	title = {Protein Engineering with Lightweight Graph Denoising Neural Networks},
-	elocation-id = {2023.11.05.565665},
-	year = {2023},
-	doi = {10.1101/2023.11.05.565665},
-	publisher = {Cold Spring Harbor Laboratory},
-	URL = {https://www.biorxiv.org/content/early/2023/11/05/2023.11.05.565665},
-	eprint = {https://www.biorxiv.org/content/early/2023/11/05/2023.11.05.565665.full.pdf},
-	journal = {bioRxiv}
+@article{zhou2024protlgn,
+  title={Protein engineering with lightweight graph denoising neural networks},
+  author={Zhou, Bingxin and Zheng, Lirong and Wu, Banghao and Tan, Yang and Lv, Outongyi and Yi, Kai and Fan, Guisheng and Hong, Liang},
+  journal={Journal of Chemical Information and Modeling},
+  volume={64},
+  number={9},
+  pages={3650--3661},
+  year={2024},
+  publisher={ACS Publications}
 }
 ```
 
