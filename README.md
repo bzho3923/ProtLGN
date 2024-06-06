@@ -54,9 +54,11 @@ see `requirements.txt` for more detail.
 We use the dataset from `CATH 4.2`, you can download from https://www.cathdb.info/.
 
 ```sh
-cd <your dir>
-wget 
 mkdir -p data/cath_k10/raw
+cd data/cath_k10/raw
+wget https://huggingface.co/datasets/tyang816/cath/blob/main/dompdb.tar
+# or wget https://lianglab.sjtu.edu.cn/files/ProtSSN-2024/dompdb.tar
+tar -xvf dompdb.tar
 ```
 
 #### Step 2: build graph dataset
