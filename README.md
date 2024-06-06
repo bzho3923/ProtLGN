@@ -34,6 +34,10 @@ With additional mutation evaluations from wet biochemical assessments, the pre-t
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## 📄 News
+
+- [2024.06.06] We recently developed two more advanced protein engineering tools named [ProtSSN](https://github.com/tyang816/ProtSSN) and [ProSST](https://github.com/ai4protein/ProSST) for zero-shot prediction. We recommend you try the new models!
+
 <!-- GETTING STARTED -->
 ## Getting Started
 
@@ -114,6 +118,16 @@ Please cite our paper:
   year={2024},
   publisher={ACS Publications}
 }
+
+@article{tan2023protssn
+  title={Semantical and Topological Protein Encoding Toward Enhanced Bioactivity and Thermostability},
+  author={Tan, Yang and Zhou, Bingxin and Zheng, Lirong and Fan, Guisheng and Hong, Liang},
+  journal={bioRxiv},
+  pages={2023--12},
+  year={2023},
+  publisher={Cold Spring Harbor Laboratory}
+}
+
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
