@@ -45,7 +45,7 @@ def mutant_dataset(args):
         args.mutant_dataset.split('/')[-1]+f"k{args.c_alpha_max_neighbors}",
         args.mutant_dataset+"/DATASET",
         c_alpha_max_neighbors=args.c_alpha_max_neighbors,
-        pre_transform=NormalizeProtein(filename=f'data/cath40_k{args.c_alpha_max_neighbors}/mean_attr.pt'),
+        pre_transform=NormalizeProtein(filename=f'norm/cath_k{args.c_alpha_max_neighbors}_mean_attr.pt'),
     )
     return mm_dataset
 

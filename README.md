@@ -43,9 +43,17 @@ With additional mutation evaluations from wet biochemical assessments, the pre-t
 
 Please follow these simple example steps to get start! 😊
 
-### Prerequisites
+### Conda Enviroment
 
-see `requirements.txt` for more detail.
+Please make sure you have installed **[Anaconda3](https://www.anaconda.com/download)** or **[Miniconda3](https://docs.conda.io/projects/miniconda/en/latest/)**.
+
+**Enviroment.**
+
+```shell
+conda env create -f environment.yaml
+conda activate protlgn
+pip install torch_scatter torch_sparse torch_cluster -f https://data.pyg.org/whl/torch-2.3.0+cu121.html
+```.
 
 ### Pre-train ProtLGN
 
